@@ -29,7 +29,10 @@ const App: React.FC = () => {
     { id: 5, nombre: 'Arte' },
   ]);
   const [empleados, setEmpleados] = useState<Empleado[]>([
-    { id: 1, nombre: 'Juan', apellido: 'Perez', idDepartamento: 1 },
+    { id: 1, nombre: 'Mishell', apellido: 'Cuasquer', idDepartamento: 1 },
+    { id: 2, nombre: 'Domenica', apellido: 'Cuasquer', idDepartamento: 1 },
+    { id: 3, nombre: 'Veronica', apellido: 'CHisaguano', idDepartamento: 1 },
+    { id: 4, nombre: 'Erasmo', apellido: 'Cuasquer', idDepartamento: 1 },
   ]);
 
   //leer los datos del local storage al cargar la aplicacion
