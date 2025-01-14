@@ -1,0 +1,138 @@
+body {
+    background-color: #2c2c2c;
+    color: #e6e6e6;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    color: #4caf50;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.Formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    margin-bottom: 20px;
+}
+
+input[type="text"], input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #4caf50;
+    border-radius: 8px;
+    background-color: #333;
+    color: #e6e6e6;
+    font-size: 14px;
+}
+
+input[type="text"]:focus, input[type="email"]:focus {
+    outline: none;
+    border-color: #45a049;
+    background-color: #444;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 10px 5px;
+    background-color: #4caf50;
+    color: #fff;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+    transform: scale(1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.lista-usuarios {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.lista-usuarios h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #4caf50;
+    margin-bottom: 10px;
+}
+
+.lista-usuarios ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.lista-usuarios li {
+    background-color: #333;
+    padding: 10px 15px;
+    margin: 8px 0;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #e6e6e6;
+    font-size: 14px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.lista-usuarios li:hover {
+    background-color: #444;
+    transition: background-color 0.3s;
+}
+
+.lista-usuarios .usuario-detalle {
+    display: flex;
+    flex-direction: column;
+}
+
+.lista-usuarios button {
+    background-color: #f44336;
+    margin-left: 10px;
+    padding: 8px 12px;
+    font-size: 12px;
+}
+
+.lista-usuarios button.editar {
+    background-color: #007bff;
+}
+
+.lista-usuarios button:hover {
+    filter: brightness(1.2);
+}
+
+.lista-usuarios button.editar:hover {
+    background-color: #0056b3;
+}
+
+.lista-usuarios button.eliminar:hover {
+    background-color: #d32f2f;
+}

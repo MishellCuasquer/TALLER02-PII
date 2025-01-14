@@ -1,0 +1,45 @@
+/* Estilos para la barra de navegación */
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #36c777; /* Color de fondo */
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para los enlaces */
+nav a {
+  color: #fff; /* Color del texto */
+  text-decoration: none; /* Sin subrayado */
+  margin: 0 15px; /* Espaciado entre enlaces */
+  font-size: 16px;
+  font-weight: bold;
+  transition: color 0.3s, transform 0.2s;
+}
+
+/* Hover y enfoque */
+nav a:hover {
+  color: #f5f4e9; /* Cambia el color al pasar el mouse */
+  transform: scale(1.1); /* Efecto de agrandamiento */
+}
+
+nav a:active {
+  color: #ebe8df; /* Color cuando se hace clic */
+}
+
+/* Responsivo para pantallas pequeñas */
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column; /* Enlaces en columna */
+    padding: 20px;
+  }
+
+  nav a {
+    margin: 10px 0; /* Espaciado vertical */
+  }
+}
+
+
+
+

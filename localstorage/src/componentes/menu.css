@@ -1,0 +1,25 @@
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #145a32; /* Color de fondo verde oscuro */
+    padding: 1rem;
+}
+
+/* Estilo de los enlaces */
+.navbar-link {
+    color: #e1f8e2; /* Color blanco para el texto */
+    text-decoration: none; /* Sin subrayado */
+    font-size: 1rem; /* Tamaño de fuente */
+}
+
+/* Estilo responsivo */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 1rem 0;
+    }
+    .navbar-link {
+        margin: 0.5rem 0;
+    }
+}
